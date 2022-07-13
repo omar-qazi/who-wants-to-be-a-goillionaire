@@ -8,10 +8,11 @@
 - Imports
 - Variables
 - Constants
-- Slices
-- Structs
 - Output (Print)
 - Input (Scan)
+- Functions
+- Slices
+- Structs
 - Conditions
 - Loops
 - HTTP (GET) request
