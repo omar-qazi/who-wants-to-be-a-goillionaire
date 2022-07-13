@@ -73,8 +73,6 @@ func main() {
 			fmt.Println("f. ", questions[i].Answers.AnswerF)
 		}
 
-		//fmt.Println(questions[i].CorrectAnswers)
-
 		var userAns string
 		fmt.Print("\nEnter response (a,b,c,d,e,f): ")
 		fmt.Scanln(&userAns)
@@ -94,11 +92,15 @@ func main() {
 			os.Exit(0)
 		}
 	}
+	fmt.Print("\033[H\033[2J")
+	fmt.Println("CONGRATULATION! YOU WON!")
+	fmt.Printf("\nYou have won $%d00,000 !\n", score)
+	os.Exit(0)
 }
 
 func GetQuizQuestions() QuizQuestions {
 	const baseUrl = `https://quizapi.io/api/v1/questions`
-	const apiKey = `la9Eq8Rle8k5iw06vJKFc9dcXbYFkL11oxqqKqMe`
+	const apiKey = `la9Eq8Rle8k5iw06vJKFc9dcXbYFkL11oxqqKqMe` // IMPORTANT: You should NOT store API keys in plaintext.
 	const limit = `10`
 	const category = `Linux`
 	const difficulty = `easy`
