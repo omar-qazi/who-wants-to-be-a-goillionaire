@@ -1,5 +1,5 @@
 # Who wants to be a Goillionaire!
-- A quiz game where you are asked a series of questions. 
+- A quiz game where you are asked a series of questions (fetched from quizapi.io). 
 - Answer correctly and you get $100,000 for each correct answer.
 - Answer incorrectly, and you lose all.
 
